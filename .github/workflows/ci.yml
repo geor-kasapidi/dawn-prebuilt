@@ -35,9 +35,9 @@ jobs:
       # 7. <MacOS x64, Debug, latest Clang compiler toolchain on the default runner image, default generator>
       # 8. <MacOS x64, Release, latest Clang compiler toolchain on the default runner image, default generator>
       matrix:
-        os: [macos-latest]
+        os: [windows-latest]
         build_type: [Release]
-        toolchain: [clang]
+        toolchain: [msvc]
         include:
           - os: macos-latest
             toolchain: clang
